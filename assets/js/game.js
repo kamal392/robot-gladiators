@@ -1,4 +1,9 @@
 
+// Game States 
+// "Win" - Player robot has defeated all the enemy-robot
+//     * Fight with all eneny-robots 
+//     * Defeat all enemy-robot
+// "Loss" -Player robot has is zero or less
 
 var playerName = window.prompt("whats your robot's name");
 var playerHealth = 100;
@@ -7,21 +12,23 @@ var playerMoney  = 10;
 
 // you can log multiple values at one like this
 
-console.log(playerName,playerHealth,playerAttack);
 
-
-var enemyName = "Roborto";
+var enemyNames = ["Robort", "Amy Android", "Robo Trumblr"];
 var enemyHealth = 50;
 var enemyAttack = 12;
 
-var fight = function() {
+
+//fight(enemyRobot);
+
+
+
+
+
+
+var fight = function(enemyName) {
 // Alert players that they are starting the round.
     window.alert("Welcome to Robot Gladiators!");
     
-
-
-}
-
 var promptFight = window.prompt ("would you like to 'FIGHT' or 'SKIP' to chose.");
 // here we have created a variable outside the function . we use var to create a new variable but here we want to update the value of a variable that already exists.
 // using the var key would create a new enemyHealth variable inside the figth function , meaning that the enemyHealth variable we created at the top of the file and outside the function 
@@ -92,7 +99,21 @@ else{
 }
 
 else {
-    window.alert("you need to choose a valid optio. Try again!");
+    window.alert("you need to choose a valid option. Try again!");
+}
+
+
+
+
+
+}
+
+
+
+
+for(var i = 0; i < enemyNames.length; i++) {
+    fight(enemyNames[i]);
+   
 }
 
 
@@ -100,16 +121,6 @@ else {
 
 
 
-
-
-
-
-
-
-
-
-
-fight();
 
 
 
