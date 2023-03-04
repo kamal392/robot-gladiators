@@ -36,4 +36,4 @@ window.alert(playerName);
 
 
 
-// fight();
+fight();
