@@ -8,6 +8,7 @@ var playerHealth = 100;
 var playerAttack = 10;
 var playerMoney = 10;
 
+
 var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
 var enemyHealth = 50;
 var enemyAttack = 12;
@@ -84,7 +85,6 @@ var fight = function (enemyName) {
   // fight function ends
 };
 
-for (var i = 0; i < enemyNames.length; i++) {
-  // As loop iterates through the array , the fight function call passes each enemy-robot name into the fight ()function .
+for(var i =0; i<enemyNames.length; i++){
   fight(enemyNames[i]);
 }
